@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li, a{
+    text-decoration: none;
+    padding: 15px 5px;
+    list-style: none;
+    color: black;
+}
+.navbar img {
+    width: 30%;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/fundo.jpg);
+}
