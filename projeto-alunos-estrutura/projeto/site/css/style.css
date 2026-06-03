@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 body{
     display: flex;
     flex-direction: column;
 }
 .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     gap: 40px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    
 }
 .navbar ul{
     display: flex;
@@ -20,16 +29,32 @@ body{
 }
 .navbar ul li, a{
     text-decoration: none;
-    padding: 15px 5px;
+    padding: 2em 5px;
     list-style: none;
     color: black;
 }
 .navbar img {
     width: 30%;
+    margin: 10px;
 }
 .hero{
-    display: flex;
+    height: 100vh;
+    background-image: url(/projeto-alunos-estrutura/projeto/site/img/fundo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-image: url(img/fundo.jpg);
+    color: white;
+    display: flex;
+    gap: 5em;
+}
+.hero a{
+    text-align: center;
+    color: white;
+    background-color: none;
+    border: solid 1px white;
+    border-radius: 3px;
+    padding: 10px 45px;
 }
